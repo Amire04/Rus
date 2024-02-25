@@ -1,0 +1,147 @@
+
+#panel,
+#flip {
+  padding: 5px;
+  text-align: center;
+  background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+  border: solid 1px #0a0034;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+#panel1,
+#flip1 {
+  padding: 5px;
+  text-align: center;
+  background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+  border: solid 1px #0a0034;
+}
+
+#panel1 {
+  padding: 50px;
+  display: none;
+}
+
+#panel2,
+#flip2 {
+  padding: 5px;
+  text-align: center;
+  background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+  border: solid 1px #0a0034;
+}
+
+#panel2 {
+  padding: 50px;
+  display: none;
+}
+
+#panel3,
+#flip3 {
+  padding: 5px;
+  text-align: center;
+  background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+  border: solid 1px #0a0034;
+}
+
+
+#panel4,
+#flip4 {
+  padding: 5px;
+  text-align: center;
+  background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+  border: solid 1px #0a0034;
+}
+
+
+
+#panel3 {
+  padding: 50px;
+  display: none;
+}
+#panel4 {
+  padding: 50px;
+  display: none;
+}
+
+#panel,
+#flip {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgb(0, 0, 44);
+  color: aquamarine;
+  border: solid 1px blue;
+  border-radius: 3px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+#panel1,
+#flip1 {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgb(0, 0, 44);
+  color: aquamarine;
+  border: solid 1px blue;
+  border-radius: 3px;
+}
+
+#panel1 {
+  padding: 50px;
+  display: none;
+}
+
+#panel2,
+#flip2 {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgb(0, 0, 44);
+  color: aquamarine;
+  border: solid 1px blue;
+  border-radius: 3px;
+}
+
+#panel2 {
+  padding: 50px;
+  display: none;
+}
+
+#panel3,
+#flip3 {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgb(0, 0, 44);
+  color: aquamarine;
+  border: solid 1px blue;
+  border-radius: 3px;
+}
+
+#panel3 {
+  padding: 50px;
+  display: none;
+}
+
+#panel4,
+#flip4 {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgb(0, 0, 44);
+  color: aquamarine;
+  border: solid 1px blue;
+  border-radius: 3px;
+}
+
+#panel4 {
+  padding: 50px;
+  display: none;
+}
