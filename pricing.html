@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="sources/styles/mycss.css" />
+
+    <title>Tsitata</title>
+    <link
+      rel="icon"
+      href="sources/files/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  
+    <style>
+      #panel,
+      #flip {
+        padding: 5px;
+        text-align: center;
+        background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+        border: solid 1px #0a0034;
+      }
+
+      #panel {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+    <style>
+      #panel1,
+      #flip1 {
+        padding: 5px;
+        text-align: center;
+        background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+        border: solid 1px #0a0034;
+      }
+
+      #panel1 {
+        padding: 50px;
+        display: none;
+      }
+      
+    </style>
+    <style>
+      #panel2,
+      #flip2 {
+        padding: 5px;
+        text-align: center;
+        background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+        border: solid 1px #0a0034;
+      }
+
+      #panel2 {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+    <style>
+      #panel3,
+      #flip3 {
+        padding: 5px;
+        text-align: center;
+        background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+        border: solid 1px #0a0034;
+      }
+
+      #panel3 {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="sources/files/logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Дом</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="tsitaty.html">Цитаты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="acc.html">Мой аккаунт</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="basket1.html">Любимые Фразы</a>
+              </li>
+              <li id="myBtn" class="nav-item">
+                <a class="nav-link">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">Про нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img
+                    style="
+                      width: 30px;
+                      margin-inline: 1em; /* чтобы не прилипало*/
+                    "
+                    src="sources/images/instagram.webp "
+                    alt="telegram"
+                  />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img
+                    style="
+                      width: 30px;
+                      margin-inline: 1em; /* чтобы не прилипало*/
+                    "
+                    src="sources/images/tega.webp "
+                    alt="telegram"
+                  />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img
+                    style="
+                      width: 30px;
+                      margin-inline: 1em; /* чтобы не прилипало*/
+                    "
+                    src="sources/images/vk.png "
+                    alt="telegram"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="col-lg-4 col-md-12 media-links">
+      <div id="mypopup" class="popup">
+        <div class="popup-content">
+          <div class="popup-header">
+            <h3>Местоположение</h3>
+            <span class="close">&times;</span>
+          </div>
+          <div class="popup-body">
+            <img class="mapping" src="sources/images/map.png" alt="AITU">
+          </div>
+          <div class="popup-footer">
+            <div class="col-lg-4 col-md-12 media-links">
+            <a href="#">
+              <img
+                style="width: 40px; margin-inline: 1em; "
+                src="sources/images/instagram.webp "
+                alt="instagram"
+              />
+            </a>
+            <a href="#">
+              <img
+                style="width: 40px; margin-inline: 1em"
+                src="sources/images/telegram.png"
+                alt="telegram"
+              />
+            </a>
+            <a href="#">
+              <img
+                style="width: 40px; margin-inline: 1em"
+                src="sources/images/vk.png"
+                alt="vk"
+              />
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="container-fluid mt-4">
+        <div class="row">
+
+          <div class="col-lg-1"></div>
+
+
+          <div class="col-lg-8 col-md-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 mt-4">
+                <div class="card">
+                  <a href="#">
+                    <img
+                      src="sources/images/ilonMask.jpg"
+                      class="card-img-top"
+                      alt="Football"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">Илон Маск</a></h5>
+                    <p class="card-text">
+                      <a href="#"> </a>
+                    </p>
+                    <a href="football.html" class="btn btn-primary"
+                      >Перейти</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mt-4">
+                <div class="card">
+                  <img
+                    src="sources/images/lary.png"
+                    class="card-img-top"
+                    alt="Box"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ларри Эллисон</h5>
+                    <p class="card-text"></p>
+                    <a href="box.html" class="btn btn-primary">Перейти</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+                <div class="card">
+                  <img
+                    src="sources/images/jef.jpg"
+                    class="card-img-top"
+                    alt="Volleyball"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Джефф Безос</h5>
+                    <p class="card-text"></p>
+                    <a href="voleyball.html" class="btn btn-primary"
+                      >Перейти</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+                <div class="card">
+                  <img
+                    src="sources/images/mark.webp"
+                    class="card-img-top"
+                    alt="Volleyball"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Марк Цукербер</h5>
+                    <p class="card-text"></p>
+                    <a href="swimming.html" class="btn btn-primary"
+                      >Перейти</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+                <div class="card">
+                  <img
+                    src="sources/images/bernar.jpg"
+                    class="card-img-top"
+                    alt="Volleyball"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Бернар Арно</h5>
+                    <p class="card-text"></p>
+                    <a href="basketball.html" class="btn btn-primary"
+                      >Перейти</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+                <div class="card">
+                  <img
+                    src="sources/images/lek.jpg"
+                    class="card-img-top"
+                    alt="Volleyball"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Джек Ма</h5>
+                    <p class="card-text"></p>
+                    <a href="golf.html" class="btn btn-primary">Перейти</a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4 col-md-6 mt-4">
+                <div class="card">
+                  <a href="#">
+                    <img
+                      src="sources/images/woren.jpg"
+                      class="card-img-top"
+                      alt="Football"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">Уоррен Баффет</a></h5>
+                    <p class="card-text">
+                      <a href="#"> </a>
+                    </p>
+                    <a href="woren.html" class="btn btn-primary"
+                      >Перейти</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mt-4">
+                <div class="card">
+                  <a href="#">
+                    <img
+                      src="sources/images/bill.webp"
+                      class="card-img-top"
+                      alt="Football"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">Билл Гейтс</a></h5>
+                    <p class="card-text">
+                      <a href="#"> </a>
+                    </p>
+                    <a href="bill.html" class="btn btn-primary"
+                      >Перейти</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mt-4">
+                <div class="card">
+                  <a href="#">
+                    <img
+                      src="sources/images/fill.webp"
+                      class="card-img-top"
+                      alt="Football"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">Фил Найт</a></h5>
+                    <p class="card-text">
+                      <a href="#"> </a>
+                    </p>
+                    <a href="fill.html" class="btn btn-primary"
+                      >Перейти</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="col-lg-12 col-md-12 text-center mt-4">
+              <a href="#"><p>Нужна помощь?</p></a>
+            </div>
+
+            <div class="col-lg-12 col-md-12 text-center">
+              <a href="#"
+                ><img
+                  class="call-anim"
+                  style="width: 40px"
+                  src="sources/images/whatsapp.webp "
+                  alt="whatsapp"
+              /></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-12">
+            <div class="row px-2">
+              <div class="col-lg-12 sidebar my-4">
+                
+                  <p>Илон Маск:</p>
+                  <div id="flip" style="color: #1d48f5;">Learn more>>></div>
+<div id="panel">Илон Маск — визионер и предприниматель, основатель компаний SpaceX и Tesla, стремящийся к колонизации Марса и развитию экологически чистых технологий</div>
+                
+              </div>
+              <div class="col-lg-12 sidebar my-4">
+                <p>
+                  <p>Ларри Эллисон:</p>
+                  <div id="flip1" style="color: #1d48f5;">Learn more>>></div>
+<div id="panel1"> Ларри Эллисон — сооснователь корпорации Oracle, один из самых богатых людей в мире, известен своими инновационными подходами к развитию программного обеспечения.</div>
+                </p>
+              </div>
+              <div class="col-lg-12 sidebar my-4">
+                <p>
+                  <p>Джефф Безос:</p>
+                  <div id="flip2" style="color: #1d48f5;">Learn more>>></div>
+<div id="panel2">  Джефф Безос — основатель и генеральный директор Amazon, самый богатый человек на планете, чья компания играет ключевую роль в мировой торговле и технологических инновациях.</div>
+                </p>
+              </div>
+
+
+              <div class="col-lg-12 sidebar my-4">
+                <p>
+                  <p>Марк Цукерберг:</p>
+                  <div id="flip3" style="color: #1d48f5;">Learn more>>></div>
+<div id="panel3">  Марк Цукерберг — основатель и генеральный директор Facebook, миллиардер, революционизировавший социальные медиа и коммуникацию в интернете.</div>
+                </p>
+              </div>
+
+              <div class="col-lg-12 sidebar my-4">
+                <p>
+                  <p>Бернар Арно:</p>
+                  <div id="flip4" style="color: #1d48f5;">Learn more>>></div>
+<div id="panel4"> Бернар Арно — председатель и генеральный директор LVMH, владелец одного из крупнейших мировых конгломератов в индустрии моды и товаров роскоши.</div>
+                </p>
+              </div>
+
+              <div class="col-lg-12 sidebar my-4">
+                <p>
+                  <p>Джек Ма:</p>
+                  <div id="flip5" style="color: #1d48f5;">Learn more>>></div>
+<div id="panel5">  Джек Ма — основатель Alibaba Group, китайский предприниматель, играющий ключевую роль в развитии электронной коммерции и цифровой экономики в Китае и мире.</div>
+                </p>
+              </div>
+
+              <div class="col-lg-12 sidebar my-4">
+                
+                <p>Уоррен Баффет:</p>
+                <div id="flip6" style="color: #1d48f5;">Learn more>>></div>
+<div id="panel6">Уоррен Баффет — легендарный инвестор и предприниматель, глава Berkshire Hathaway, известен своими успешными инвестициями и философией долгосрочного инвестирования.</div>
+              
+            </div>
+
+            <div class="col-lg-12 sidebar my-4">
+                
+              <p>Билл Гейтс:</p>
+              <div id="flip7" style="color: #1d48f5;">Learn more>>></div>
+<div id="panel7">Билл Гейтс — сооснователь Microsoft, филантроп, чьи действия и фонды направлены на борьбу с бедностью, заболеваниями и содействие глобальному развитию образования и здравоохранения.</div>
+            
+          </div>
+
+          <div class="col-lg-12 sidebar my-4">
+                
+            <p>Фил Найт:</p>
+            <div id="flip8" style="color: #1d48f5;">Learn more>>></div>
+<div id="panel8">Фил Найт — сооснователь компании Nike, бренда, ставшего символом спортивной культуры и инноваций в обувной индустрии.</div>
+          
+        </div>
+        
+              
+              
+      
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 footer-text text-center">
+            <p>Крылатые фразы</p>
+          </div>
+          <div class="col-lg-4 col-md-12 footer-text text-center">
+            <p>
+               <a href="#">  Контакты </a>  <br /> <a href=""></a> <a href="acc.html">Мой аккаунт</a> <br />
+              <a href="aboutus.html"> Наша Команда </a>
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-12 media-links">
+            <a href="#">
+              <img
+                style="width: 40px; margin-inline: 1em; /* чтобы не прилипало*/"
+                src="sources/images/instagram.webp "
+                alt="instagram"
+              />
+            </a>
+            <a href="#">
+              <img
+                style="width: 40px; margin-inline: 1em"
+                src="sources/images/telegram.png"
+                alt="telegram"
+              />
+            </a>
+            <a href="#">
+              <img
+                style="width: 40px; margin-inline: 1em"
+                src="sources/images/vk.png"
+                alt="vk"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="sources/js/script.js"></script>
+    <script src="sources/js/scripts.js"></script>
+    <script src="sources/js/contacts.js"></script>
+  </body>
+</html>
